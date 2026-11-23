@@ -1,0 +1,14 @@
+[project]
+name = "leetcode"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+python_files = ["solution.py"]
+addopts = "--import-mode=importlib"   # allows many files all named solution.py
